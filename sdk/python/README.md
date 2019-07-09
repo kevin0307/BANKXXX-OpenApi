@@ -1,13 +1,13 @@
-Welcome to Bhex-Python
+Welcome to Bankxxx-Python
 ======================
 
-An official Python implementation of the lastest Open API for Bhex.
+An official Python implementation of the lastest Open API for Bankxxx.
 
 Install
 -------
 
 ```bash
-pip install bhex
+pip install bankxxx
 ```
 
 Usage
@@ -15,9 +15,9 @@ Usage
 
 #### REST API
 
-Init bhex client:
+Init bankxxx client:
 ```python
-b = BhexClient(api_key='', secret='')
+b = BankxxxClient(api_key='', secret='')
 ```
 
 Request with proxies:
@@ -28,16 +28,16 @@ proxies = {
   "https": "http://ip:port",
 }
 
-b = BhexClient(api_key='', secret='', proxies=proxies)
+b = BankxxxClient(api_key='', secret='', proxies=proxies)
 ```
 
 #### Web Socket
 
 ##### Init
 
-Init bhex websocket client:
+Init bankxxx websocket client:
 ```python
-client = BhexWss(api_key='', secret='')
+client = BankxxxWss(api_key='', secret='')
 ```
 
 ##### Subscribe
@@ -116,7 +116,7 @@ b.ticker_24hr('BTCUSDT')
 #### new order
 ```python
  b.order_new(symbol='BTCUSDT', side='BUY', type='LIMIT', quantity='0.01', price='1000', timeInForce='GTC')
-``` 
+```
 
 #### get order
 ```python
